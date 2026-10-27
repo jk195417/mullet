@@ -7,16 +7,20 @@
   "author": "楊竑昕 <jk195417@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^7.0.0",
-    "parcel-bundler": "^1.10.0"
+    "parcel-bundler": "^1.10.0",
+    "sass": "^1.32.0"
   },
   "scripts": {
-    "start": "yarn install && parcel index.html"
+    "start": "yarn install && parcel index.html",
+    "build": "parcel build index.html --public-url ./"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.3",
     "jquery": "^3.5.0",
     "popper.js": "^1.12.9",
     "vue": "2"
+  },
+  "resolutions": {
+    "deasync": "^0.1.30"
   }
 }
